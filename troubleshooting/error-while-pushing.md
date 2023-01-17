@@ -22,11 +22,11 @@ You're trying to push changes to a repo you don't have access to. It's either no
 2. Fork the repo
 3. Copy the link to your forked repo
 
--- Now you'll have to change the link it points towards: option 1 (commands) --
+#### Now you'll have to change the link it points towards: option 1 (commands) 
 4. On your cloned repo: `git remote set-url origin NEW_GIT_URL_HERE` 
 5. Try to push again
 
--- Now you'll have to change the link it points towards: option 2 (manually)--
+#### Now you'll have to change the link it points towards: option 2 (manually)
 
 4. Navigate into the git folder: `cd .git` 
 5. Open the `.config` file
