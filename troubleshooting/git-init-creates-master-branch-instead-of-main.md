@@ -10,4 +10,4 @@
 
 ## Troubleshooting
 
-1️⃣ `git config --global init.defaultBranch main` 
+1. `git config --global init.defaultBranch main` 

@@ -18,16 +18,16 @@ The requested URL returned error: 403
 
 You're trying to push changes to a repo you don't have access to. It's either not your repo or it's a repo no one gave you access to.
 
-1️⃣ Make sure you're trying to push changes to your forked version, not the original one
-2️⃣ Fork the repo
-3️⃣ Copy the link to your forked repo
+1. Make sure you're trying to push changes to your forked version, not the original one
+2. Fork the repo
+3. Copy the link to your forked repo
 
 -- Now you'll have to change the link it points towards: option 1 (commands) --
-4️⃣ On your cloned repo: `git remote set-url origin NEW_GIT_URL_HERE` 
-5️⃣ Try to push again
+4. On your cloned repo: `git remote set-url origin NEW_GIT_URL_HERE` 
+5. Try to push again
 
 -- Now you'll have to change the link it points towards: option 2 (manually)--
 
-4️⃣ Navigate into the git folder: `cd .git` 
-5️⃣ Open the `.config` file
-6️⃣ Substitue the link to github with the one with your fork
+4. Navigate into the git folder: `cd .git` 
+5. Open the `.config` file
+6. Substitue the link to github with the one with your fork

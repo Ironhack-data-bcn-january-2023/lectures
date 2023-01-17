@@ -15,12 +15,12 @@ fatal: Authentication failed for 'https://github.com/REPO’
 ## Troubleshooting
 That's because you need to use a token instead of your password. Here's the steps:
 
-1️⃣ Go to github
-2️⃣ Go to your profile > settings
-3️⃣ Scroll down to developer settings
-4️⃣ Generate new token (classic)
-5️⃣ Make sure the first box is checked
-6️⃣ Scroll down and generate new token
-7️⃣ Copy your new token somewhere on your computer
-8️⃣ Repeat the pushing process: use your github user and then paste your token into terminal
-9️⃣ Everything should push normally 🙂
+1. Go to github
+2. Go to your profile > settings
+3. Scroll down to developer settings
+4. Generate new token (classic)
+5. Make sure the first box is checked
+6. Scroll down and generate new token
+7. Copy your new token somewhere on your computer
+8. Repeat the pushing process: use your github user and then paste your token into terminal
+9. Everything should push normally 🙂
