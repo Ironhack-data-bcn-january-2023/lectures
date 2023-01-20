@@ -1,14 +1,11 @@
 # setting-vscode-up
 
-## only windows
-
+## only windows
 1. `ctrl + shift + x`
 2. type: python
 3. install python extension
-
-   ![](https://code.visualstudio.com/assets/docs/python/tutorial/python-extension-marketplace.png)
-
-## only macOS
+![](https://code.visualstudio.com/assets/docs/python/tutorial/python-extension-marketplace.png)
+## only macOS
 
 4. macOS: `cmmd + shift + p`
 5. on the box, type: `code`
