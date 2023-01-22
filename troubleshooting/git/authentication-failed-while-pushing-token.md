@@ -13,6 +13,7 @@ fatal: Authentication failed for 'https://github.com/REPO’
 ```
 
 ## Troubleshooting
+
 That's because you need to use a token instead of your password. Here's the steps:
 
 1. Go to github
