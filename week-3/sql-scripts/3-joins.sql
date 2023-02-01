@@ -1,31 +1,27 @@
 USE employees;
 
--- Selecting everything at once
+-- Selecting EVERYTHING at once
 SELECT * FROM departments;
 
 SELECT * 
 	FROM departments; -- same, in two lines
 
-SELECT * 
-	FROM employees;
-    
+-- Selecting SOME columns at once
 SELECT birth_date, first_name
 	FROM employees;
     
 SELECT BIRTH_DATE, first_name
 	FROM EMployees; -- not case sensitive
-    
+	
+-- Using an alias
 SELECT birth_date as DOB, first_name
 	FROM employees;
     
--- using alias: dones't change original table
-
+-- Using alias: dones't change original table
 SELECT birth_date as DOB, first_name as name, hire_date
 	FROM employees;
-    
-SELECT first_name 
-	FROM employees;
 
+-- Using a filter 
 SELECT first_name, last_name, gender
 	FROM employees
 	WHERE first_name = "Parto";
@@ -35,8 +31,7 @@ SELECT first_name, last_name, gender
 -- case_sensitive
 SELECT first_name, last_name, gender
 	FROM employees
-	WHERE first_name = "parto";  -- 228results
--- it retrieves capitalized values when querying lowercase
+	WHERE first_name = "parto";  -- 228results -- it retrieves capitalized values when querying lowercase
 
 SELECT first_name, last_name, gender
 	FROM employees
@@ -230,7 +225,6 @@ SELECT first_name, last_name
 	FROM table
 		WHERE condition = "something else"
         
-SELECT column as Alias
 -- Multiple conditions: AND, OR; more conditions (a AND B) or C
 
 -- DISTINCT (for unique values)
