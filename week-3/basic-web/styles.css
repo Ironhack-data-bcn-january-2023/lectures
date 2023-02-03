@@ -1,0 +1,13 @@
+body {
+  background-color: blueviolet;
+}
+
+p {
+  color: white;
+}
+
+.my-special-paragraph {
+  color: red;
+  font-weight: 200;
+  font-style: italic;
+}
