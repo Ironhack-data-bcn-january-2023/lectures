@@ -7,7 +7,7 @@ dbName = "shoes"
 table_name = "shoes"
 
 # 1. Extraction
-df = scraper.scrapping_sneakers()
+#df = scraper.scrapping_sneakers()
 df = pd.read_csv("data/scrapped.csv")
 
 # 2. Connection & loading
