@@ -1,6 +1,7 @@
 import src.scraper as scraper
 import src.sql_database as db
 import pandas as pd
+import src.visualization as viz
 
 dbName = "shoes"
 table_name = "shoes"
@@ -19,7 +20,7 @@ db.insert(df, table_name, dbName)
 db.select (table_name, dbName)
 
 # 5. Plotting
-
+viz.basic_histogram(df)
 
 
 
