@@ -1,8 +1,9 @@
 import requests
-from bs4 import BeautifulSoup # pip install beautifulsoup4
+from bs4 import BeautifulSoup 
 import pandas as pd
 import requests
 import re
+import os
 
 def description (url):
     html = requests.get(url)
@@ -16,6 +17,7 @@ def scrapping_sneakers ():
     url = "https://www.murallasport.com/29-zapatillas-moda-mujer"
     html = requests.get(url)
     soup = BeautifulSoup(html.content, "html.parser")
+    print("DOING REQUEST")
     
     # 1. Getting the name 
     tags_name = soup.find_all("div", attrs = {"class":"name_product_box"})
@@ -29,14 +31,16 @@ def scrapping_sneakers ():
     price = soup.find_all("div", {"class":"price_product_box"})
     prices = [i.getText().split("\n")[1].replace("€", "") for i in price]
     
-    
     # 4. Getting the links for each items
     link = soup.find_all("div", attrs = {"class": "name_product_box"})
     links = [f"https://www.murallasport.com{i.span.a.get('href')}" for i in link]
-    
+
     # 5. Description
     the_descriptions = [description(i) for i in links]
                              
+    os.system("say website scraped")
+    print("DATAFRAME SCRAPPED")
+
 
     all_together = {
         "names": names,
@@ -46,8 +50,9 @@ def scrapping_sneakers ():
         "descriptions": the_descriptions
     }
 
+    print(all_together)
+    os.system("say saving into dataframe")
     df = pd.DataFrame(all_together)
+    df.to_csv("data/scrapped.csv", index=False)
 
-    df.to_csv("../data/scrapped.csv")
-
-scrapping_sneakers()
+    return pd.DataFrame.from_dict(all_together)
