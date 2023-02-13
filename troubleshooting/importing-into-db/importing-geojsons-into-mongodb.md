@@ -71,8 +71,8 @@ client = MongoClient("localhost:27017")
 db = client["test"]
 c = db.get_collection("test")
 
-for i in san_francisco[“features”]:
-    c.insert_one({“geo”: i[“geometry”][“geometries”][0], “name”: i[“properties”]})
+for i in san_francisco["features"]:
+    c.insert_one({“geo”: i["geometry"]["geometries"][0], “name”: i["properties"]})
 ```
 
 # 2. Manually & with compass
