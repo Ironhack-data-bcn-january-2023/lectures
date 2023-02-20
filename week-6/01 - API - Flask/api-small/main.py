@@ -40,7 +40,7 @@ def insert_into_table (the_table, d_id, name):
     sql.insert_one(the_table, d_id, name)
     return "Inserted!"
 
-@app.route("/insert-into-employees", methods=["POST"])
+@app.route("/insert-into-employees")
 def insert_by_passing_params ():
 
     id_ = request.args["id_"] # params.id_ = {}
