@@ -2,6 +2,8 @@
 
 Go to [git-lfs](https://git-lfs.com/)
 
+Install it on your system.
+
 Find the type of file you want to ignore. Eg.: `file.h5`
 
 ```bash
