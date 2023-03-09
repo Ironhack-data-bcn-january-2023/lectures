@@ -28,3 +28,8 @@ git add file.h5
 git commit -m "uploading"
 git push origin main
 ```
+4. You may get the error: "updates were rejected because the remote work contains work that you do not have locally". Make sure it is what you want. If that happens, you need to overwrite your remote changes with your local ones. You can do that by running:
+
+```bash
+git push --force origin main
+```
